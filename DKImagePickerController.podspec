@@ -1,7 +1,12 @@
 Pod::Spec.new do |s|
   s.name          = "DKImagePickerController"
-  s.version       = "3.3.4"
+<<<<<<< HEAD
+  s.version       = "3.3.5"
   s.summary       = "It's a Facebook style Image Picker Controller by Swift."
+=======
+  s.version       = "3.4.0"
+  s.summary       = "It's a Facebook style Image Picker Controller by Swift3."
+>>>>>>> 29d9b42c0c495bab0872f5debb9b57b9d179581b
   s.homepage      = "https://github.com/zhangao0086/DKImagePickerController"
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.author        = { "Bannings" => "zhangao0086@gmail.com" }
@@ -13,7 +18,8 @@ Pod::Spec.new do |s|
   s.resource      = "DKImagePickerController/DKImagePickerController.bundle"
   s.frameworks    = "Foundation", "UIKit", "Photos"
   s.requires_arc  = true
-
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
+  
   s.subspec 'Camera' do |camera|
 
     camera.ios.source_files = "DKCamera/DKCamera.swift"
